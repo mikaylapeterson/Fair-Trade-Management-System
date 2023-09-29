@@ -1,5 +1,7 @@
 # Fair Trade Management System
 
+## Installation and Use
+
 ## License
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
