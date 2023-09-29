@@ -1,1 +1,1 @@
-# FairTradeManagementSystem
+# Fair Trade Management System
