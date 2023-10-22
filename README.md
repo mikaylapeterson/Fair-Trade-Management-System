@@ -1,4 +1,4 @@
-# Fair Trade Management System
+# Fairtrade Management System
 
 ## Installation and Use
 
