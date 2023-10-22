@@ -1,0 +1,54 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>370</x><y>150</y><w>210</w><h>110</h></coordinates><panel_attributes>ProducerInfo
+--
+PK: ProducerID INT
+--
+Username VARCHAR
+Password VARCHAR
+--
+FK: ProductID INT
+FK: ProducerNetworkID INT
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>10</y><w>210</w><h>60</h></coordinates><panel_attributes>ProductType
+--
+PK: ProductID INT
+--
+ProductName VARCHAR
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>350</y><w>100</w><h>30</h></coordinates><panel_attributes>/Form Factory/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>550</y><w>210</w><h>60</h></coordinates><panel_attributes>Budgets
+--
+** This is a WIP until I figure
+this out in the application
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>550</y><w>210</w><h>60</h></coordinates><panel_attributes>FinancialStatements
+--
+** This is a WIP until I figure
+this out in the application
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>550</y><w>210</w><h>60</h></coordinates><panel_attributes>CropPlans
+--
+** This is a WIP until I figure
+this out in the application</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>440</y><w>130</w><h>30</h></coordinates><panel_attributes>/FinanceFormFactory/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>440</y><w>150</w><h>30</h></coordinates><panel_attributes>/OtherFormTypesFactory/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>10</y><w>210</w><h>60</h></coordinates><panel_attributes>ProducerNetwork
+--
+PK: ProducerNetworkID INT
+--
+NetworkName VARCHAR
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>90</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>90</y><w>200</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>60</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>60</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>250</y><w>150</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.
+are associated with a</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>400</y><w>200</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element><element><id>Text</id><coordinates><x>700</x><y>440</y><w>230</w><h>40</h></coordinates><panel_attributes>OtherFormTypes is a placeholder for when I know all the form categories
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>370</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>400</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>400</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>490</y><w>200</w><h>30</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>460</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>490</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>490</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>460</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>140</y><w>210</w><h>140</h></coordinates><panel_attributes>Events
+--
+PK: EventID INT
+--
+EventName VARCHAR
+StartDate DATE
+EndDate DATE
+Completed BOOL
+DateCreated DATE
+--
+FK: ProducerID INT</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>200</y><w>170</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>840</x><y>540</y><w>140</w><h>70</h></coordinates><panel_attributes>This entire thing
+is a WIP and may
+be modified as I
+see fit
+_umletcode=
+fg=red; bg=red;
+drawArc(width-25,5,10,50,50,80,false) //Parameters (x, y, width, height, start, extent, open)
+drawCircle(width-20,40,3) //Parameters (x, y, radius)
+    </panel_attributes><additional_attributes></additional_attributes></element></diagram>
