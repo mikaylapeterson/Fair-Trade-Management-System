@@ -1,4 +1,5 @@
 <!-- TODO: add a user guide link once a guide is made? -->
+<!-- tutorial for .NET Maui: https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?tabs=vsmac -->
 # Fairtrade Certification Management System
 
 A desktop/mobile application that is aimed to help streamline the Fairtrade application process for small scale producers who wish to become Fairtrade certified.
