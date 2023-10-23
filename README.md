@@ -4,6 +4,10 @@
 
 A desktop/mobile application that is aimed to help streamline the Fairtrade certification application process for small scale producers who wish to become Fairtrade certified.
 
+## Vlogs
+
+Vlog 1 - [Project Planning and Initialization](https://youtu.be/w4pNoUt-4zg)
+
 ## UN SDGs
 
 - SDG 1 - No Poverty
