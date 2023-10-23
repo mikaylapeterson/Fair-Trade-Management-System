@@ -6,7 +6,7 @@ A desktop/mobile application that is aimed to help streamline the Fairtrade cert
 
 ## Vlogs
 
-Vlog 1 - [Project Planning and Initialization](https://youtu.be/w4pNoUt-4zg)
+Vlog 1 - [Project Planning and Initialization](https://youtu.be/ql6oqapi9nw)
 
 ## UN SDGs
 
