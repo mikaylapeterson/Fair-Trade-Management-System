@@ -8,6 +8,10 @@ A desktop/mobile application that is aimed to help streamline the Fairtrade cert
 
 Vlog 1 - [Project Planning and Initialization](https://youtu.be/ql6oqapi9nw)
 
+## Kanban Board
+
+The project board can be found [here](https://github.com/users/mikaylapeterson/projects/4)
+
 ## UN SDGs
 
 - SDG 1 - No Poverty
