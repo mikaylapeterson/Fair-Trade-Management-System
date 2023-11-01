@@ -1,8 +1,8 @@
 ﻿namespace FairtradeCertificationManagementSystem;
 
-public partial class Admin : ContentPage
+public partial class Signup : ContentPage
 {
-	public Admin()
+	public Signup()
 	{
 		InitializeComponent();
 	}

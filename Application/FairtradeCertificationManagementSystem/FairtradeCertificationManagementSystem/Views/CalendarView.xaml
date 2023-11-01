@@ -9,8 +9,7 @@
             <xc:CalendarView
                 Days="{Binding MyCalendar.Days}"
                 DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
-                NavigatedDate="{Binding MyCalendar.NavigatedDate}"
-                RightArrowCommand="">
+                NavigatedDate="{Binding MyCalendar.NavigatedDate}">
             </xc:CalendarView>
         </VerticalStackLayout>
     </ScrollView>

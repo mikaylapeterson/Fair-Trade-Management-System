@@ -58,4 +58,12 @@
 		<PackageReference Include="Plugin.Maui.CalendarStore" Version="1.0.2" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Views\" />
+	  <None Remove="ViewModels\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Views\" />
+	  <Folder Include="ViewModels\" />
+	</ItemGroup>
 </Project>
