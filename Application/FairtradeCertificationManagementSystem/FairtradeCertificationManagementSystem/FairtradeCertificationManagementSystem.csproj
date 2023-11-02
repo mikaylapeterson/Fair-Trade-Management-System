@@ -61,9 +61,13 @@
 	<ItemGroup>
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
+	  <None Remove="Resources\Images\appbar.calendar.day.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
 	  <Folder Include="ViewModels\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\calendar.png" />
 	</ItemGroup>
 </Project>
