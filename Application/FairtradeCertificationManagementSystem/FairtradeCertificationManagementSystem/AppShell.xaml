@@ -6,12 +6,22 @@
     xmlns:local="clr-namespace:FairtradeCertificationManagementSystem.Views"
     Shell.FlyoutBehavior="Disabled">
 
+    <ShellContent Title="Login"
+                  ContentTemplate="{DataTemplate local:LoginView}"
+                  Route="Login"/>
+
+    <ShellContent Title="Signup"
+                  ContentTemplate="{DataTemplate local:SignupView}"
+                  Route="Signup"/>
+
     <TabBar>
         <Tab Title="Calendar" Icon="calendar.png">
-            <ShellContent ContentTemplate="{DataTemplate local:CalendarView}"/>
+            <ShellContent ContentTemplate="{DataTemplate local:CalendarView}"
+                          Route="Calendar"/>
         </Tab>
         <Tab Title="Checklist" Icon="listcheck.png">
-             <ShellContent ContentTemplate="{DataTemplate local:ChecklistView}"/>
+             <ShellContent ContentTemplate="{DataTemplate local:ChecklistView}"
+                           Route="Checklist"/>
         </Tab>
     </TabBar>
 

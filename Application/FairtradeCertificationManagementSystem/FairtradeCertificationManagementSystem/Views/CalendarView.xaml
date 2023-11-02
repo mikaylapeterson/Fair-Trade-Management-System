@@ -11,6 +11,7 @@
                 DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"
                 NavigatedDate="{Binding MyCalendar.NavigatedDate}">
             </xc:CalendarView>
+            <Label Text="Events"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

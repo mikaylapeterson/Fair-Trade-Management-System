@@ -6,4 +6,9 @@ public partial class SignupView : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void Login_Button_Clicked(System.Object sender, System.EventArgs e)
+    {
+        await Shell.Current.GoToAsync("Login");
+    }
 }

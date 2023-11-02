@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FairtradeCertificationManagementSystem.Views.LoginView"
-             Title="LoginView">
-    <VerticalStackLayout>
+             Title="Login">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="25,0">
         <VerticalStackLayout>
             <Label Text="Username"/>
             <StackLayout>
@@ -16,7 +16,7 @@
                 <Entry Placeholder="Enter username"/>
             </StackLayout>
         </VerticalStackLayout>
-        <Button Text="Login"/>
-        <Button Text="Register"/>
+        <Button x:Name="Login_Button" Text="Login" Clicked="Login_Button_Clicked"/>
+        <Button x:Name="Register_Button" Text="Register" Clicked="Register_Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
