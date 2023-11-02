@@ -62,6 +62,7 @@
 	  <None Remove="Views\" />
 	  <None Remove="ViewModels\" />
 	  <None Remove="Resources\Images\appbar.calendar.day.png" />
+	  <None Remove="Resources\Images\appbar.list.check.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
@@ -69,5 +70,6 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\calendar.png" />
+	  <BundleResource Include="Resources\Images\listcheck.png" />
 	</ItemGroup>
 </Project>

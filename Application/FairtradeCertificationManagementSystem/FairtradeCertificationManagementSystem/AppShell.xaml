@@ -10,7 +10,7 @@
         <Tab Title="Calendar" Icon="calendar.png">
             <ShellContent ContentTemplate="{DataTemplate local:CalendarView}"/>
         </Tab>
-        <Tab Title="Checklist">
+        <Tab Title="Checklist" Icon="listcheck.png">
              <ShellContent ContentTemplate="{DataTemplate local:ChecklistView}"/>
         </Tab>
     </TabBar>
