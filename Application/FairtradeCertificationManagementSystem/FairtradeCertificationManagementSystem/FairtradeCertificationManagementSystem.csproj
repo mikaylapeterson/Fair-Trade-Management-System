@@ -53,6 +53,9 @@
 		<PackageReference Include="XCalendar.Core" Version="4.5.2" />
 		<PackageReference Include="Plugin.Maui.CalendarStore" Version="1.0.2" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.6" />
+		<PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -62,10 +65,14 @@
 	  <None Remove="Resources\Images\appbar.list.check.png" />
 	  <None Remove="Resources\Images\listcheck.png" />
 	  <None Remove="Resources\Images\calendar.png" />
+	  <None Remove="Data\" />
+	  <None Remove="Models\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
 	  <Folder Include="ViewModels\" />
+	  <Folder Include="Data\" />
+	  <Folder Include="Models\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\calendar.png" />

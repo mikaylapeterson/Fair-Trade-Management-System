@@ -16,6 +16,7 @@
                 <Label Text="Checklist for Product Type"/>
                 <ListView ItemsSource="{Binding MyList}">
                     <ListView.ItemTemplate>
+                        <!--Can't effectively template this until the database is working-->
                         <DataTemplate>
                             <ViewCell>
                                 <Grid Padding="10">
