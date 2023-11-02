@@ -6,26 +6,10 @@
     xmlns:local="clr-namespace:FairtradeCertificationManagementSystem.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <!--<ShellContent Title="Login"
-                  ContentTemplate="{DataTemplate local:Login}"
-                  Route="Login"/>-->
-
     <TabBar>
         <Tab>
             <ShellContent Title="Checklist"
                           ContentTemplate="{DataTemplate local:ChecklistView}"/>
-            <!--<ShellContent Title="Calendar"
-                          ContentTemplate="{DataTemplate local:Calendar}"
-                          />
-
-            <ShellContent Title="Admin"
-                          ContentTemplate="{DataTemplate local:Admin}"
-                          />
-
-            <ShellContent Title="Playing Around"
-                          ContentTemplate="{DataTemplate local:MainPage}"
-                          IsVisible="True"
-                          />-->
         </Tab>
 
     </TabBar>
