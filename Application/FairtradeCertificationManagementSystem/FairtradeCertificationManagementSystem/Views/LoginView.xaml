@@ -3,22 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FairtradeCertificationManagementSystem.Views.LoginView"
              Title="LoginView">
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <HorizontalStackLayout>
-                <Label Text="Username"/>
-                <Entry Placeholder="Username" IsPassword="False"/>
-            </HorizontalStackLayout>
-
-            <HorizontalStackLayout>
-                <Label Text="Password"/>
-                <Entry Placeholder="Password" IsPassword="True"/>
-            </HorizontalStackLayout>
+    <VerticalStackLayout>
+        <VerticalStackLayout>
+            <Label Text="Username"/>
+            <StackLayout>
+                <Entry Placeholder="Enter username"/>
+            </StackLayout>
         </VerticalStackLayout>
-
-    </ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Password"/>
+            <StackLayout>
+                <Entry Placeholder="Enter username"/>
+            </StackLayout>
+        </VerticalStackLayout>
+        <Button Text="Login"/>
+        <Button Text="Register"/>
+    </VerticalStackLayout>
 </ContentPage>
