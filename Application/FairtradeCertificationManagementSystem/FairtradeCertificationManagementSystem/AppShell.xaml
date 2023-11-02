@@ -7,11 +7,12 @@
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
-        <Tab>
-            <ShellContent Title="Checklist"
-                          ContentTemplate="{DataTemplate local:ChecklistView}"/>
+        <Tab Title="Calendar">
+            <ShellContent ContentTemplate="{DataTemplate local:CalendarView}"/>
         </Tab>
-
+        <Tab Title="Checklist">
+             <ShellContent ContentTemplate="{DataTemplate local:ChecklistView}"/>
+        </Tab>
     </TabBar>
 
 </Shell>

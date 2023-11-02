@@ -4,6 +4,6 @@
              x:Class="FairtradeCertificationManagementSystem.Views.ChecklistView"
              Title="Checklist">
     <VerticalStackLayout>
-        <Label Text="jwohguheriu"/>
+        <Label Text="checklist"/>
     </VerticalStackLayout>
 </ContentPage>
