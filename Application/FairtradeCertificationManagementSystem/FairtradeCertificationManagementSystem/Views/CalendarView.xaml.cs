@@ -1,8 +1,8 @@
-﻿namespace FairtradeCertificationManagementSystem;
+﻿namespace FairtradeCertificationManagementSystem.Views;
 
-public partial class Calendar : ContentPage
+public partial class CalendarView : ContentPage
 {
-	public Calendar()
+	public CalendarView()
 	{
 		InitializeComponent();
 		BindingContext = new CalendarViewModel();

@@ -1,8 +1,8 @@
-﻿namespace FairtradeCertificationManagementSystem;
+﻿namespace FairtradeCertificationManagementSystem.Views;
 
-public partial class Login : ContentPage
+public partial class LoginView : ContentPage
 {
-	public Login()
+	public LoginView()
 	{
 		InitializeComponent();
 	}
