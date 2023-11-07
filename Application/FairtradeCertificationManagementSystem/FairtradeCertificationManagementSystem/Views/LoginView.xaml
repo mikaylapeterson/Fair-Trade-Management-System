@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:FairtradeCertificationManagementSystem.Models"
+             
              x:Class="FairtradeCertificationManagementSystem.Views.LoginView"
-             Title="Login">
-    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="25,0">
-        <VerticalStackLayout>
+             Title="Login"
+             BindingContext="FairTradeCertificationManagementSystem.ViewModels.LoginViewModel">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                             Padding="25"
+                             Spacing="10">
             <Label Text="Username"/>
-            <StackLayout>
-                <Entry Placeholder="Enter username"/>
-            </StackLayout>
-        </VerticalStackLayout>
-        <VerticalStackLayout>
+            <Entry Placeholder="Enter username" Text="{Binding user.Username}"/>
             <Label Text="Password"/>
-            <StackLayout>
-                <Entry Placeholder="Enter username"/>
-            </StackLayout>
+            <Entry Placeholder="Enter username" Text="{Binding user.Password}" IsPassword="True"/>
+            
+            <Button x:Name="Login_Button" Text="Login" Clicked="Login_Button_Clicked"/>
+            <Button x:Name="Register_Button" Text="Register" Clicked="Register_Button_Clicked"/>
         </VerticalStackLayout>
-        <Button x:Name="Login_Button" Text="Login" Clicked="Login_Button_Clicked"/>
-        <Button x:Name="Register_Button" Text="Register" Clicked="Register_Button_Clicked"/>
-    </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

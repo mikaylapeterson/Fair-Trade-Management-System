@@ -5,7 +5,9 @@
              x:Class="FairtradeCertificationManagementSystem.Views.CalendarView"
              Title="Calendar">
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                             Padding="25"
+                             Spacing="10">
             <xc:CalendarView
                 Days="{Binding MyCalendar.Days}"
                 DaysOfWeek="{Binding MyCalendar.DayNamesOrder}"

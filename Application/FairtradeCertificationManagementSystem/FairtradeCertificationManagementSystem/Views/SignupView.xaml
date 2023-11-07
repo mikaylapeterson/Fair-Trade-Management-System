@@ -3,8 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FairtradeCertificationManagementSystem.Views.SignupView"
              Title="Signup">
-    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="25,0">
-        <VerticalStackLayout>
+    <ScrollView>
+        <!--Data bindings aren't set up properly yet-->
+        <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                             Padding="25"
+                             Spacing="10">
             <Label Text="Username"/>
             <Entry Placeholder="Enter username"/>
 
@@ -25,5 +28,5 @@
                 <Button x:Name="Login_Button" Clicked="Login_Button_Clicked"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
-    </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

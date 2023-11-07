@@ -1,4 +1,6 @@
 ﻿using CommunityToolkit.Maui;
+using FairtradeCertificationManagementSystem.Data;
+using FairtradeCertificationManagementSystem.Views;
 using Microsoft.Extensions.Logging;
 
 namespace FairtradeCertificationManagementSystem;
@@ -16,6 +18,10 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+
+		builder.Services.AddSingleton<LoginView>();
+
+		builder.Services.AddSingleton<CertificationDatabase>();
 
 #if DEBUG
 		builder.Logging.AddDebug();
