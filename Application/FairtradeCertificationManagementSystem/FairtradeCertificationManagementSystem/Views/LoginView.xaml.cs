@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using FairtradeCertificationManagementSystem.Data;
 using FairtradeCertificationManagementSystem.Models;
+using FairtradeCertificationManagementSystem.ViewModels;
 
 namespace FairtradeCertificationManagementSystem.Views;
 
@@ -9,11 +10,13 @@ public partial class LoginView : ContentPage
 {
     CertificationDatabase Database;
     public ObservableCollection<User> Users { get; set; }
+    public LoginViewModel LoginVM;
 
 	public LoginView(CertificationDatabase certificationDatabase)
 	{
 		InitializeComponent();
         Database = certificationDatabase;
+        LoginVM = new LoginViewModel();
 	}
 
     private async void Register_Button_Clicked(System.Object sender, System.EventArgs e)
@@ -47,7 +50,7 @@ public partial class LoginView : ContentPage
         // TODO need to actually verify the login information
         // this should be business logic moved to a ViewModel
 
-
+        LoginVM.verifyLogin();
         //await Database.SaveItemAsync(UserItem); // this should also get moved to a ViewModel
         await Shell.Current.GoToAsync("Calendar");
         return;

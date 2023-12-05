@@ -16,7 +16,37 @@ public class LoginViewModel : INotifyPropertyChanged
         set
         {
             _user = value;
-            OnPropertyChanged();
+            OnPropertyChanged("User");
+        }
+    }
+
+    private string _userName;
+
+    public string UserName
+    {
+        get => _userName;
+        set
+        {
+            if (_userName != value)
+            {
+                _userName = value;
+                OnPropertyChanged("UserName");
+            }
+        }
+    }
+
+    private string _password;
+
+    public string Password
+    {
+        get => _password;
+        set
+        {
+            if (_password != value)
+            {
+                _password = value;
+                OnPropertyChanged("Password");
+            }
         }
     }
 
@@ -29,7 +59,14 @@ public class LoginViewModel : INotifyPropertyChanged
     {
         // this should return a string for the display box that I originally had
         // in Login_Button_Clicked() to follow proper MVVM standards/separation of concerns
-        //user.Password =
+        if (string.IsNullOrEmpty(UserName))
+        {
+            
+        }
+        if (string.IsNullOrEmpty(Password))
+        {
+
+        }
         // user and password need to be set and then verified
     }
 

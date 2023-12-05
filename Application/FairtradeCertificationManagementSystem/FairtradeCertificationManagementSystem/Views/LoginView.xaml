@@ -11,9 +11,9 @@
                              Padding="25"
                              Spacing="10">
             <Label Text="Username"/>
-            <Entry Placeholder="Enter username" Text="{Binding user.Username}"/>
+            <Entry Placeholder="Enter username" Text="{Binding UserName}"/>
             <Label Text="Password"/>
-            <Entry Placeholder="Enter username" Text="{Binding user.Password}" IsPassword="True"/>
+            <Entry Placeholder="Enter username" Text="{Binding Password}" IsPassword="True"/>
             
             <Button x:Name="Login_Button" Text="Login" Clicked="Login_Button_Clicked"/>
             <Button x:Name="Register_Button" Text="Register" Clicked="Register_Button_Clicked"/>

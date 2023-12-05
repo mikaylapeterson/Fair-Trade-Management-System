@@ -14,7 +14,7 @@
                   ContentTemplate="{DataTemplate local:SignupView}"
                   Route="Signup"/>
 
-    <TabBar>
+    <TabBar> <!--try giving this a route and a name-->
         <Tab Title="Calendar" Icon="calendar.png">
             <ShellContent ContentTemplate="{DataTemplate local:CalendarView}"
                           Route="Calendar"/>

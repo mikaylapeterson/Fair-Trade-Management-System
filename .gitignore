@@ -60,11 +60,11 @@ artifacts/
 # NuGet Symbol Packages
 *.snupkg
 # The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
+fairtrade_certification_management_system/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
-!**/[Pp]ackages/build/
+!fairtrade_certification_management_system/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
-#!**/[Pp]ackages/repositories.config
+#!fairtrade_certification_management_system/[Pp]ackages/repositories.config
 # NuGet v3's project.json files produces more ignorable files
 *.nuget.props
 *.nuget.targets
@@ -75,6 +75,145 @@ artifacts/
 # but keep track of directories ending in .cache
 !?*.[Cc]ache/
 .vs/
+
+# Do not remove or rename entries in this file, only add new ones
+# See https://github.com/flutter/flutter/issues/128635 for more context.
+
+# Miscellaneous
+*.class
+*.lock
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code related
+.classpath
+.project
+.settings/
+.vscode/*
+
+# Flutter repo-specific
+/bin/cache/
+/bin/internal/bootstrap.bat
+/bin/internal/bootstrap.sh
+/bin/mingit/
+/dev/benchmarks/mega_gallery/
+/dev/bots/.recipe_deps
+/dev/bots/android_tools/
+/dev/devicelab/ABresults*.json
+/dev/docs/doc/
+/dev/docs/api_docs.zip
+/dev/docs/flutter.docs.zip
+/dev/docs/lib/
+/dev/docs/pubspec.yaml
+/dev/integration_tests/fairtrade_certification_management_system/xcuserdata
+/dev/integration_tests/fairtrade_certification_management_system/Pods
+/packages/flutter/coverage/
+version
+analysis_benchmark.json
+
+# packages file containing multi-root paths
+.packages.generated
+
+# Flutter/Dart/Pub related
+fairtrade_certification_management_system/doc/api/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+fairtrade_certification_management_system/generated_plugin_registrant.dart
+.packages
+.pub-preload-cache/
+.pub-cache/
+.pub/
+build/
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+
+# Android related
+fairtrade_certification_management_system/android/fairtrade_certification_management_system/gradle-wrapper.jar
+.gradle/
+fairtrade_certification_management_system/android/captures/
+fairtrade_certification_management_system/android/gradlew
+fairtrade_certification_management_system/android/gradlew.bat
+fairtrade_certification_management_system/android/local.properties
+fairtrade_certification_management_system/android/fairtrade_certification_management_system/GeneratedPluginRegistrant.java
+fairtrade_certification_management_system/android/key.properties
+*.jks
+
+# iOS/XCode related
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/*.mode1v3
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/*.mode2v3
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/*.moved-aside
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/*.pbxuser
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/*.perspectivev3
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/*sync/
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/.sconsign.dblite
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/.tags*
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/.vagrant/
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/DerivedData/
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/Icon?
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/Pods/
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/.symlinks/
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/profile
+fairtrade_certification_management_system/ios/fairtrade_certification_management_system/xcuserdata
+fairtrade_certification_management_system/ios/.generated/
+fairtrade_certification_management_system/ios/Flutter/.last_build_id
+fairtrade_certification_management_system/ios/Flutter/App.framework
+fairtrade_certification_management_system/ios/Flutter/Flutter.framework
+fairtrade_certification_management_system/ios/Flutter/Flutter.podspec
+fairtrade_certification_management_system/ios/Flutter/Generated.xcconfig
+fairtrade_certification_management_system/ios/Flutter/ephemeral
+fairtrade_certification_management_system/ios/Flutter/app.flx
+fairtrade_certification_management_system/ios/Flutter/app.zip
+fairtrade_certification_management_system/ios/Flutter/flutter_assets/
+fairtrade_certification_management_system/ios/Flutter/flutter_export_environment.sh
+fairtrade_certification_management_system/ios/ServiceDefinitions.json
+fairtrade_certification_management_system/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+fairtrade_certification_management_system/Flutter/ephemeral/
+fairtrade_certification_management_system/Pods/
+fairtrade_certification_management_system/macos/Flutter/GeneratedPluginRegistrant.swift
+fairtrade_certification_management_system/macos/Flutter/ephemeral
+fairtrade_certification_management_system/xcuserdata/
+
+# Windows
+fairtrade_certification_management_system/windows/flutter/generated_plugin_registrant.cc
+fairtrade_certification_management_system/windows/flutter/generated_plugin_registrant.h
+fairtrade_certification_management_system/windows/flutter/generated_plugins.cmake
+
+# Linux
+fairtrade_certification_management_system/linux/flutter/generated_plugin_registrant.cc
+fairtrade_certification_management_system/linux/flutter/generated_plugin_registrant.h
+fairtrade_certification_management_system/linux/flutter/generated_plugins.cmake
+
+# Coverage
+coverage/
+
+# Symbols
+app.*.symbols
+
+# Exceptions to above rules.
+!fairtrade_certification_management_system/ios/fairtrade_certification_management_system/default.mode1v3
+!fairtrade_certification_management_system/ios/fairtrade_certification_management_system/default.mode2v3
+!fairtrade_certification_management_system/ios/fairtrade_certification_management_system/default.pbxuser
+!fairtrade_certification_management_system/ios/fairtrade_certification_management_system/default.perspectivev3
+!/packages/flutter_tools/test/data/dart_dependencies_test/fairtrade_certification_management_system/.packages
+!/dev/ci/fairtrade_certification_management_system/Gemfile.lock
+!.vscode/settings.json
 
 # Miscellanious, or project-relevant files to be ignored
 .DS_Store
