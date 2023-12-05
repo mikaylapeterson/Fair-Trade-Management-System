@@ -56,25 +56,38 @@ class _CalendarState extends State<Calendar> {
                   title: Text("Calendar",
                   style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),),
                 ),
-                FloatingActionButton(
-                  onPressed: () {
-                    showDialog(context: context, builder: (context) {
-                      return AlertDialog(
-                        scrollable: true,
-                        title: Text("Checklist Item Name"),
-                        content: Padding(padding: EdgeInsets.all(8),
-                        child: TextField(
-                          controller: eventName,
-                        ),),
-                        actions: [
-                          ElevatedButton(onPressed: () {
-                            //events.addAll(selectedDay!: [Event(eventName.text)]);
-                            Navigator.of(context).pop();
-                          }, child: Text("Submit"))
-                        ],
-                      );
-                    });
-                  }),
+                // add an event
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    FloatingActionButton(
+                      child: const Icon(Icons.add),
+                      onPressed: () {
+                        showDialog(context: context, builder: (context) {
+                          return AlertDialog(
+                            scrollable: true,
+                            title: Text("Checklist Item Name"),
+                            content: Padding(padding: EdgeInsets.all(8),
+                            child: TextField(
+                              controller: eventName,
+                            ),),
+                            actions: [
+                              ElevatedButton(onPressed: () {
+                                //events.addAll(selectedDay!: [Event(eventName.text)]);
+                                Navigator.of(context).pop();
+                              }, child: Text("Submit"))
+                            ],
+                          );
+                        });
+                      }),
+                      const SizedBox(width: 10),
+                      // add an event
+                    FloatingActionButton(
+                      child: const Icon(Icons.delete_forever),
+                      onPressed: () {
+                      }),
+                  ],
+                ),
                 TableCalendar(
                   headerStyle: const HeaderStyle(formatButtonVisible: false, titleCentered: true),
                   availableGestures: AvailableGestures.all,
