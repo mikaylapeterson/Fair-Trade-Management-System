@@ -42,6 +42,9 @@ class _CalendarState extends State<Calendar> {
             icon: Icon(Icons.checklist),
             label: 'Checklist',
           ),
+          NavigationDestination(
+            icon: Icon(Icons.settings),
+            label: 'Settings'),
         ],
       ),
       body: Center(
