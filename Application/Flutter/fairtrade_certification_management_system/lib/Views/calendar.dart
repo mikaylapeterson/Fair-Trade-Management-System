@@ -11,6 +11,7 @@ class Calendar extends StatefulWidget {
 
 class _CalendarState extends State<Calendar> {
   int currentPageIndex = 0;
+  bool? checked = false;
   DateTime today = DateTime.now();
   Map<DateTime, List<Event>> events = {};
   final eventName = TextEditingController();
@@ -47,7 +48,9 @@ class _CalendarState extends State<Calendar> {
             label: 'Settings'),
         ],
       ),
-      body: Center(
+      body: [
+        // Calendar Page
+        Center(
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(8),
@@ -105,6 +108,64 @@ class _CalendarState extends State<Calendar> {
             ),
         ),
       ),
+      // Checklist Page
+      Center(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(8),
+
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const ListTile(
+                  title: Text("Checklist",
+                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),),
+                ),
+                // add an event
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    
+                    const SizedBox(height: 10),
+                      Checkbox(value: checked, onChanged: (value) {
+                        setState(() {
+                          checked = value;
+                        });
+                      }),
+                    Container(
+
+                    ),
+                    ],
+                    
+                  
+                ),
+                
+              ],
+            ),
+            ),
+        ),
+      ),
+      // Settings Page
+      Center(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(8),
+
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const ListTile(
+                  title: Text("Settings",
+                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),),
+                ),
+                // add an event
+                
+              ],
+            ),
+            ),
+        ),
+      ),
+      ][currentPageIndex]
     );
   }
 }
