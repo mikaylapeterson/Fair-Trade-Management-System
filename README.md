@@ -4,13 +4,15 @@
 
 A desktop/mobile application that is aimed to help streamline the Fairtrade certification application process for small scale producers who wish to become Fairtrade certified.
 
-## Vlogs
+## Vlogs + Commercial
 
 Vlog 1 - [Project Planning and Initialization](https://youtu.be/ql6oqapi9nw)
 
+Commercial (and demo!) - [click here!](https://www.youtube.com/watch?v=Di0EPMvUDCM)
+
 ## Kanban Board
 
-The project board can be found [here](https://github.com/users/mikaylapeterson/projects/4)
+The project board can be found [here](https://github.com/users/mikaylapeterson/projects/4).
 
 ## UN SDGs
 
@@ -26,8 +28,25 @@ The complexity of the application process is partially due to the sheer length o
 Since it is critical to keep track of these documents and it can be difficult to navigate the standards document, there is an opportunity to make an application that helps the producers keep create and keep track of these documents as well as specific dates related to the certification process. 
 
 ## Installation and Use
+!! This project has only been confirmed to work on the iOS device simulator on macOS Sonoma. The macOS version itself is **not stable** and I do not guarantee that it works !!
 
-- Stay tuned...
+### Prerequisites
+To get up and running, all you need to download from this GitHub is the Flutter subfolder located in the Application directory.
+
+Once you are in the Flutter directory, you are going to want to install Flutter according to the instructions listed [here](https://docs.flutter.dev/get-started/install) for your operating system!
+
+### Usage
+1. Open the simulator app that comes with XCode and open a device running iOS17
+2. Open Visual Studio Code
+3. Install the [Flutter Extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter) and the [Dart Extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code)
+4. Open the Flutter folder in Visual Studio Code
+5. It should prompt you to run 'pub get' to update all the dependencies
+6. Click Run without debugging
+7. Select the Dart & Flutter debugger in the drop down
+8. Wait for it to connect to the simulator (it can take a while)
+9. It runs!
+
+I also have a [YouTube video](https://youtu.be/YyuhDWdNC6E) demonstrating this and I show the extensions needed at the end as well. You might need to fast forward through it
 
 ## License
 
