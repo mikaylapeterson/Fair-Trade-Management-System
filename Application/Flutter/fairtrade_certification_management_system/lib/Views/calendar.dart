@@ -15,6 +15,10 @@ class _CalendarState extends State<Calendar> {
   DateTime today = DateTime.now();
   Map<DateTime, List<Event>> events = {};
   final eventName = TextEditingController();
+  final username = TextEditingController();
+  final password = TextEditingController();
+  final product = TextEditingController();
+  final producerNetwork = TextEditingController();
   late final ValueNotifier<List<Event>> selectedEvents;
 
   void _onDaySelected(DateTime day, DateTime focusedDay){
@@ -118,7 +122,7 @@ class _CalendarState extends State<Calendar> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const ListTile(
-                  title: Text("Checklist",
+                  title: Text("2023 Checklist",
                   style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),),
                 ),
                 // add an event
@@ -132,9 +136,7 @@ class _CalendarState extends State<Calendar> {
                           checked = value;
                         });
                       }),
-                    Container(
-
-                    ),
+                    Text("Test Item")
                     ],
                     
                   
@@ -149,7 +151,7 @@ class _CalendarState extends State<Calendar> {
       Center(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(8),
+            padding: EdgeInsets.all(8),
 
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -159,7 +161,107 @@ class _CalendarState extends State<Calendar> {
                   style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),),
                 ),
                 // add an event
-                
+                Container(
+                    margin: const EdgeInsets.all(8),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color:  Colors.deepPurple.withOpacity(0.2)
+                    ),
+                    child: TextFormField(
+                      controller: username,
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "username is required";
+                        }
+                        return null;
+                      },
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
+                        label: Text("Username"),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(8),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color:  Colors.deepPurple.withOpacity(0.2)
+                    ),
+                    child: TextFormField(
+                      controller: password,
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "password is required";
+                        }
+                        return null;
+                      },
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
+                        label: Text("Password"),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(8),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color:  Colors.deepPurple.withOpacity(0.2)
+                    ),
+                    child: TextFormField(
+                      controller: product,
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "product is required";
+                        }
+                        return null;
+                      },
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
+                        label: Text("Product"),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(8),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color:  Colors.deepPurple.withOpacity(0.2)
+                    ),
+                    child: TextFormField(
+                      controller: producerNetwork,
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "network is required";
+                        }
+                        return null;
+                      },
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
+                        label: Text("Producer Network"),
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(height: 10),
+
+                  Container(
+                    height: 55,
+                    width: MediaQuery.of(context).size.width * .9,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.deepPurple
+                    ),
+                    child: TextButton(
+                      onPressed: () {
+                      }, child: const Text(
+                        "SAVE",
+                        style: TextStyle(color: Colors.white),
+                      )),
+                  ),
               ],
             ),
             ),

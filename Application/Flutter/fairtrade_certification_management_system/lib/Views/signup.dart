@@ -16,6 +16,7 @@ class _SignUpState extends State<SignUp> {
   final confirmPassword = TextEditingController();
 
   final formKey = GlobalKey<FormState>();
+  final List<String> list = <String>['Cocoa'];
 
   bool isVisible = false;
 
@@ -139,6 +140,15 @@ class _SignUpState extends State<SignUp> {
                         )
                       ),
                     ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.all(8),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.deepPurple.withOpacity(0.2)
+                    ),
+                    // add drop down here
                   ),
 
                   const SizedBox(height: 10),
